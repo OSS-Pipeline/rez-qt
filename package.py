@@ -72,7 +72,16 @@ uuid = "qt-{version}".format(version=str(version))
 
 def commands():
     env.PATH.prepend("{root}/bin")
-    env.LD_LIBRARY_PATH.append("{root}/lib")
+    env.LD_LIBRARY_PATH.prepend("{root}/lib")
+    env.QT_SELECT.set("5")
+    env.QTDIR.append("{root}")
+    env.QT_QMAKE_EXECUTABLE.append("{root}/bin/qmake")
+    env.QTTOOLDIR.append("{root}/bin")
+    env.QT_INCLUDE_DIR.append("{root}/include")
+    env.QT_LIB_DIR.append("{root}/lib")
+    env.QTLIB.append("{root}/lib")
+    env.QT_PLUGIN_PATH.append("{root}/plugins")
+    env.QML2_IMPORT_PATH.append("{root}/qml")
     env.PKG_CONFIG_PATH.append("{root}/lib/pkgconfig")
 
     # Helper environment variables.
