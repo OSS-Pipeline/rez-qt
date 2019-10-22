@@ -83,6 +83,9 @@ def commands():
     env.QT_PLUGIN_PATH.set("{root}/plugins")
     env.QML2_IMPORT_PATH.set("{root}/qml")
     env.PKG_CONFIG_PATH.prepend("{root}/lib/pkgconfig")
+    # We know that the version numbers are separated by a ".", so we should safely be able to get the
+    # number we want through a split.
+    env.CMAKE_MODULE_PATH.prepend("{root}/lib/cmake/Qt" + str(version).split(".")[0])
 
     # Helper environment variables.
     env.QT_BINARY_PATH.set("{root}/bin")
