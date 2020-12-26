@@ -50,8 +50,8 @@ ${EXTRACT_PATH}/configure \
     -qt-harfbuzz \
     -qt-pcre \
     -qt-xcb \
-    -qt-xkbcommon-x11 \
-    -xkbcommon-evdev \
+    -xkbcommon \
+    -evdev \
     -verbose
 
 echo -e "\n"

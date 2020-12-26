@@ -1,6 +1,6 @@
 name = "qt"
 
-version = "5.6.1"
+version = "5.12.6"
 
 authors = [
     "The Qt Company"

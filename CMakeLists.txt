@@ -12,7 +12,7 @@ list(GET QT_VERSION_LIST 2 QT_PATCH_VERSION)
 
 # Qt
 rez_set_archive(
-    QT_URL qt/qt-everywhere-opensource-src-${REZ_BUILD_PROJECT_VERSION}.tar.xz
+    QT_URL qt/qt-everywhere-src-${REZ_BUILD_PROJECT_VERSION}.tar.xz
     http://download.qt.io/official_releases/qt/${QT_MAJOR_VERSION}.${QT_MINOR_VERSION}/${REZ_BUILD_PROJECT_VERSION}/single/qt-everywhere-src-${REZ_BUILD_PROJECT_VERSION}.tar.xz
 )
 
